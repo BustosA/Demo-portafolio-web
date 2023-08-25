@@ -14,12 +14,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-xl custom-navbar">
     <div class="container-fluid">
-      <h1 class="navbar-brand">Sitio Web Personal</h1>
+      <h1 class="navbar-brand">SITIO WEB PERSONAL</h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,19 +32,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#start">Inicio</a>
+            <a class="nav-link" href="#start">INICIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about-me">Sobre mí</a>
+            <a class="nav-link" href="#about-me">SOBRE MÍ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#proyects">Proyectos</a>
+            <a class="nav-link" href="#proyects">PROYECTOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Habilidades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contacto</a>
+            <a class="nav-link" href="#contact">CONTACTO</a>
           </li>
         </ul>
       </div>
@@ -49,34 +51,50 @@
   <section id="start" class="d-flex container-fluid vh-100 align-items-center justify-content-center">
     <div class="text-center">
       <h1 class="titles">¡Hola a todos, soy Lautaro Agustín Bustos!</h1>
-      <h2>Desarrollador web</h2>
+      <h2>DESARROLLADOR WEB</h2>
       <div class="d-flex flex-column align-items-center">
-        <img src="./assets/profile-pic.png" alt="profile-pic" width="256" height="256" />
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn">
           <a href="">Descargar currículum</a>
         </button>
       </div>
     </div>
   </section>
-  <hr />
+
   <section id="about-me" class="container-fluid vh-100 d-flex flex-column align-items-center justify-content-center">
     <h2 class="titles">Sobre mí</h2>
-    <p>
-      Me llamo Lautaro Agustín Bustos, tengo 18 años y actualmente me
-      encuentro cursando la carrera de Licenciatura en Sistemas de la
-      Universidad Nacional de General Sarmiento y la diplomatura en Desarrollo
-      Web Full Stack de la UTN junto a la capacitación de la Fundación
-      Empujar. Estoy muy interesado por poder introducirme y trabajar en el
-      mundo IT por lo que me encuentro enfocado en aprender sobre desarrollo
-      web dedicandole tiempo a aprender a utilizar y desarrollar mis
-      habilidades con algunas herramientas de trabajos como las mencionadas a
-      continuación:
-    </p>
+    <div class="about-content">
+      <div class="about-content-main">
+        <h3>Información personal</h3>
+        <p class="about-content-para">
+          Me llamo Lautaro Agustín Bustos, tengo 18 años y actualmente me
+          encuentro cursando la carrera de Licenciatura en Sistemas de la
+          Universidad Nacional de General Sarmiento y la diplomatura en Desarrollo
+          Web Full Stack de la UTN junto a la capacitación de la Fundación
+          Empujar. Estoy muy interesado por poder introducirme y trabajar en el
+          mundo IT por lo que me encuentro enfocado en aprender sobre desarrollo
+          web dedicandole tiempo a aprender a utilizar y desarrollar mis
+          habilidades con algunas herramientas de trabajos como las mencionadas a
+          continuación:
+        </p>
+      </div>
+      <div class="about-content-skills">
+        <h3> Mis habilidades</h3>
+        <ul class="skills">
+          <li class="skills-item ">HTML</li>
+          <li class="skills-item ">CSS</li>
+          <li class="skills-item ">JavaScript</li>
+          <li class="skills-item ">React</li>
+          <li class="skills-item ">Bootstrap</li>
+          <li class="skills-item ">Git</li>
+          <li class="skills-item ">Github</li>
+        </ul>
+      </div>
+    </div>
   </section>
-  <hr />
+
   <section id="proyects" class="container-fluid vh-100 d-flex flex-column align-items-center justify-content-center">
     <h2 class="titles">Proyectos</h2>
-    <div id="carouselExampleCaptions" class="carousel carousel-dark slide">
+    <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -120,57 +138,7 @@
       </button>
     </div>
   </section>
-  <hr />
-  <section id="skills" class="container-fluid vh-100 d-flex flex-column align-items-center justify-content-center">
-    <div class="container">
-      <div class="col-12">
-        <h2 class="text-center titles">Habilidades y conocimientos</h2>
-      </div>
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <ul class="list-inline text-center d-flex flex-wrap">
-            <li class="col-5">
-              <div class="box">
-                <img class="w-50 mx-auto" src="./assets/html5.svg" alt="html" width="64" height="64" />
-                <p>HTML</p>
-              </div>
-            </li>
-            <li class="col-5">
-              <div class="box">
-                <img class="w-50 mx-auto" src="./assets/css3.svg" alt="css" width="64" height="64" />
-                <p>CSS</p>
-              </div>
-            </li>
-            <li class="col-5">
-              <div class="box">
-                <img class="w-50 mx-auto" src="./assets/js.svg" alt="js" width="64" height="64" />
-                <p>Javascript</p>
-              </div>
-            </li>
-            <li class="col-5">
-              <div class="box">
-                <img class="w-50 mx-auto" src="./assets/bootstrap.svg" alt="bootstrap" width="64" height="64" />
-                <p>Bootstrap</p>
-              </div>
-            </li>
-            <li class="col-5">
-              <div class="box">
-                <img class="w-50 mx-auto" src="./assets/git.svg" alt="git" width="64" height="64" />
-                <p>Git</p>
-              </div>
-            </li>
-            <li class="col-5">
-              <div class="box">
-                <img class="w-50 mx-auto" src="./assets/github.svg" alt="git" width="64" height="64" />
-                <p>Github</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <hr />
+
   <section id="contact" class="container-fluid vh-100">
     <h2 class="titles">Formas de contactarme</h2>
     <p>
@@ -188,7 +156,7 @@
             alt="linkedin" width="64" height="64" /></a>
       </li>
       <li>
-        <a href="mailto:lautaroabustos@gmail.com">Correo electrónico<img src="./assets/envelope.svg" alt="e-mail"
+        <a href="mailto:lautaroabustos@gmail.com">Correo electrónico<img src="./assets/correo.png" alt="e-mail"
             width="64" height="64" /></a>
       </li>
     </ul>
